@@ -13,7 +13,7 @@ class TransaksiController extends ControllerBase
         parent::initialize();
 
         if(!$this->session->has('auth')){
-            $this->response->response('/index');
+            $this->response->redirect('/index');
         }
     }
 
